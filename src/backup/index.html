@@ -1,0 +1,90 @@
+<head>
+  <script src="https://unpkg.com/d3"></script>
+  <script src="https://unpkg.com/sunburst-chart"></script>
+  <link
+    href="https://unpkg.com/tabulator-tables@5.4.3/dist/css/tabulator.min.css"
+    rel="stylesheet"
+  />
+  <script
+    type="text/javascript"
+    src="https://unpkg.com/tabulator-tables@5.4.3/dist/js/tabulator.min.js"
+  ></script>
+  <style>
+    body {
+      margin: 0;
+    }
+    .disp_div {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <div class="search-container">
+      Name: <input type="text" id="myText" value="Enter Dirctory" />
+
+      <button type="button" onclick="myFunction()">Analyze</button>
+      <button type="button" onclick="reset()">Reset</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  <div class="disp_div">
+    <div id="example-table"></div>
+    <div id="chart"></div>
+  </div>
+  <div id="container">
+    <h1>Weclome to SDA (Simple Disk Analyzer)</h1>
+  </div>
+
+  <script>
+    function reset() {
+      location.reload();
+    }
+    var x;
+    counter = 0;
+    async function myFunction() {
+      if (!counter) x = document.getElementById("myText").value;
+      counter++;
+      const invoke = window.__TAURI__.invoke;
+      var y;
+      y = await invoke("my_custom_command", { invokeMessage: x });
+      let jsonData = JSON.stringify(y);
+      const obj = JSON.parse(y);
+      data = obj;
+      const color = d3.scaleOrdinal(d3.schemePaired);
+      var viz_s = document.querySelector(".sunburst-viz");
+      if (viz_s != null) {
+        viz_s.remove();
+      }
+      Sunburst()
+        .data(data)
+        .size("value")
+        .color((d) => color(d.name))
+        .showLabels(true)
+        .tooltipContent((d, node) => `Size: <i>${node.value / 1024}</i> KB`)
+        .radiusScaleExponent(1)(document.getElementById("chart"));
+      var data_table = [];
+      data_table.push(data);
+      var table = new Tabulator("#example-table", {
+        data: data_table, //assign data to table
+        layout: "fitColumns", //fit columns to width of table (optional)
+        autoColumns: true,
+        dataTree: true,
+        dataTreeChildField: "children", //look for the child row data array in the childRows field
+      });
+      table.on("rowDblClick", function (e, row) {
+        var dumy = row.getData().absolute_path;
+        console.log(dumy);
+        invoke("delete", { path: dumy });
+      });
+      table.on("rowClick", function (e, row) {
+        x = row.getData().relative_path;
+        myFunction();
+      });
+    }
+  </script>
+</body>

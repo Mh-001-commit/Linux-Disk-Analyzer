@@ -1,0 +1,376 @@
+[
+    {
+      "name": "core",
+      "children": [
+        {
+          "name": "Axis.js",
+          "value": 79187
+        },
+        {
+          "name": "axisMarkers",
+          "children": [
+            {
+              "name": "axisMarkers.js",
+              "value": 102
+            },
+            {
+              "name": "Line.js",
+              "value": 8722
+            },
+            {
+              "name": "PathBase.js",
+              "value": 16816
+            },
+            {
+              "name": "Range.js",
+              "value": 10248
+            },
+            {
+              "name": "Text.js",
+              "value": 4674
+            },
+            {
+              "name": "TextBase.js",
+              "value": 23945
+            }
+          ]
+        },
+        {
+          "name": "Base.js",
+          "value": 39639
+        },
+        {
+          "name": "Chart.js",
+          "value": 124530
+        },
+        {
+          "name": "ChartWithAxes.js",
+          "value": 59578
+        },
+        {
+          "name": "ChartWithOrthogonalScales.js",
+          "value": 97048
+        },
+        {
+          "name": "ChartWithSeries.js",
+          "value": 45297
+        },
+        {
+          "name": "defaultTheme.js",
+          "value": 64904
+        },
+        {
+          "name": "drawers",
+          "children": [
+            {
+              "name": "Area.js",
+              "value": 12085
+            },
+            {
+              "name": "Base.js",
+              "value": 9672
+            },
+            {
+              "name": "Bubble.js",
+              "value": 4036
+            },
+            {
+              "name": "Candlestick.js",
+              "value": 4661
+            },
+            {
+              "name": "Column.js",
+              "value": 4172
+            },
+            {
+              "name": "drawers.js",
+              "value": 1912
+            },
+            {
+              "name": "JumpLine.js",
+              "value": 3627
+            },
+            {
+              "name": "Line.js",
+              "value": 4634
+            },
+            {
+              "name": "Marker.js",
+              "value": 4233
+            },
+            {
+              "name": "OHLC.js",
+              "value": 3558
+            },
+            {
+              "name": "RangeArea.js",
+              "value": 5274
+            },
+            {
+              "name": "RangeColumn.js",
+              "value": 4012
+            },
+            {
+              "name": "RangeSplineArea.js",
+              "value": 5934
+            },
+            {
+              "name": "RangeStepArea.js",
+              "value": 7970
+            },
+            {
+              "name": "RangeStick.js",
+              "value": 4100
+            },
+            {
+              "name": "Spline.js",
+              "value": 3895
+            },
+            {
+              "name": "SplineArea.js",
+              "value": 8380
+            },
+            {
+              "name": "SplineDrawer.js",
+              "value": 10691
+            },
+            {
+              "name": "StepArea.js",
+              "value": 9856
+            },
+            {
+              "name": "StepLine.js",
+              "value": 3969
+            },
+            {
+              "name": "Stick.js",
+              "value": 3794
+            }
+          ]
+        },
+        {
+          "name": "series",
+          "children": [
+            {
+              "name": "Base.js",
+              "value": 158928
+            },
+            {
+              "name": "Cartesian.js",
+              "value": 58295
+            },
+            {
+              "name": "RenderingSettings.js",
+              "value": 16620
+            },
+            {
+              "name": "series.js",
+              "value": 2565
+            }
+          ]
+        },
+        {
+          "name": "settings.js",
+          "value": 43316
+        },
+        {
+          "name": "ui",
+          "children": [
+            {
+              "name": "Background.js",
+              "value": 26880
+            },
+            {
+              "name": "Button.js",
+              "value": 26680
+            },
+            {
+              "name": "ChartCredits.js",
+              "value": 7253
+            },
+            {
+              "name": "ChartScroller.js",
+              "value": 2069
+            },
+            {
+              "name": "CircularLabelsFactory.js",
+              "value": 15261
+            },
+            {
+              "name": "Crosshair.js",
+              "value": 29926
+            },
+            {
+              "name": "CrosshairLabel.js",
+              "value": 6839
+            },
+            {
+              "name": "Label.js",
+              "value": 3909
+            },
+            {
+              "name": "LabelBase.js",
+              "value": 30045
+            },
+            {
+              "name": "LabelsFactory.js",
+              "value": 101735
+            },
+            {
+              "name": "Legend.js",
+              "value": 89160
+            },
+            {
+              "name": "LegendItem.js",
+              "value": 44371
+            },
+            {
+              "name": "MarkersFactory.js",
+              "value": 56156
+            },
+            {
+              "name": "Outline.js",
+              "value": 6160
+            },
+            {
+              "name": "Paginator.js",
+              "value": 28299
+            },
+            {
+              "name": "PaginatorButton.js",
+              "value": 2294
+            },
+            {
+              "name": "Scroller.js",
+              "value": 61831
+            },
+            {
+              "name": "Separator.js",
+              "value": 19543
+            },
+            {
+              "name": "StageCredits.js",
+              "value": 16242
+            },
+            {
+              "name": "Title.js",
+              "value": 40773
+            },
+            {
+              "name": "Tooltip.js",
+              "value": 80700
+            },
+            {
+              "name": "ui.js",
+              "value": 84
+            }
+          ]
+        },
+        {
+          "name": "utils",
+          "children": [
+            {
+              "name": "A11y.js",
+              "value": 11764
+            },
+            {
+              "name": "Animation.js",
+              "value": 2650
+            },
+            {
+              "name": "Bounds.js",
+              "value": 21499
+            },
+            {
+              "name": "Connector.js",
+              "value": 3048
+            },
+            {
+              "name": "Crossing.js",
+              "value": 2480
+            },
+            {
+              "name": "DrawingPlanIterator.js",
+              "value": 3055
+            },
+            {
+              "name": "Error.js",
+              "value": 25878
+            },
+            {
+              "name": "GlobalTooltipContainer.js",
+              "value": 3909
+            },
+            {
+              "name": "IInteractiveSeries.js",
+              "value": 2160
+            },
+            {
+              "name": "Interactivity.js",
+              "value": 5950
+            },
+            {
+              "name": "InteractivityState.js",
+              "value": 21770
+            },
+            {
+              "name": "LegendItemSettings.js",
+              "value": 18806
+            },
+            {
+              "name": "LocalTooltipContainer.js",
+              "value": 4899
+            },
+            {
+              "name": "Margin.js",
+              "value": 2836
+            },
+            {
+              "name": "OrdinalIterator.js",
+              "value": 1319
+            },
+            {
+              "name": "OrdinalZoom.js",
+              "value": 8477
+            },
+            {
+              "name": "Padding.js",
+              "value": 2940
+            },
+            {
+              "name": "Quarter.js",
+              "value": 10842
+            },
+            {
+              "name": "QuarterSettings.js",
+              "value": 5535
+            },
+            {
+              "name": "ScatterIterator.js",
+              "value": 4524
+            },
+            {
+              "name": "Space.js",
+              "value": 16478
+            },
+            {
+              "name": "TokenParser.js",
+              "value": 12549
+            },
+            {
+              "name": "TypedLayer.js",
+              "value": 2342
+            },
+            {
+              "name": "utils.js",
+              "value": 90
+            }
+          ]
+        },
+        {
+          "name": "VisualBase.js",
+          "value": 39245
+        }
+      ]
+    }
+  ]
